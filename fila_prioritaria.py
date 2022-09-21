@@ -23,7 +23,7 @@ class FilaPrioritaria:
         self.clientes_atendidos.append(cliente_atual)
         return f'Cliente atual:  {cliente_atual}, dirija-se ao caixa: {caixa}'
 
-    def estatistica(self, dia: str, agencia: int, flag) -> dict:
+    def estatistica(self, dia: str, agencia: int, flag: str) -> dict:
         if flag != 'detail':
             estatistica = {f'{agencia}-{dia}': len(self.clientes_atendidos)}
         else:
